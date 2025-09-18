@@ -6,6 +6,7 @@
     --color-button-hover: #e55720;
     --color-text: #444444;
     --color-white: #FFFFFF;
+    --color-button-add-hover: #a1a1a1;
 }
 
 /* Estilos generales */
@@ -62,7 +63,7 @@ body {
 }
 
 .section-title {
-    font-family: "Inter", serif;
+    font-family: "Inter", sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: var(--color-primary);
@@ -122,7 +123,7 @@ button {
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-button-add-hover);
 }
 
 /* Listas */
@@ -136,7 +137,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #107c10; /* Darker green for better contrast */
     font-size: 22px;
     font-weight: bold;
     text-align: center;
