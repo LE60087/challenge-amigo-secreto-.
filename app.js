@@ -57,8 +57,8 @@ function mostrarResultado(asignaciones) {
         resultado.appendChild(li);
     });
 }
-// 🔽 NUEVA FUNCIÓN: sortear un solo amigo secreto
-function sortearUnAmigo() {
+ // 🔽 NUEVA FUNCIÓN: sortear un solo amigo secreto
+ function sortearUnAmigo() {
     const errorDiv = document.getElementById("errorMensaje");
     if (amigos.length === 0) {
         if (errorDiv) {
