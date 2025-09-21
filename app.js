@@ -72,6 +72,7 @@ function sortearUnAmigo() {
         errorDiv.style.display = "none";
     }
         const indiceAleatorio = Math.floor(Math.random() * amigos.length);
-    const elegido = amigos[indiceAleatorio];
-    mostrarResultado([`🎁 El amigo secreto es: ${elegido}`]);
+        const elegido = amigos[indiceAleatorio];
+        console.log("Amigo sorteado:", elegido); // 👈 Aquí ves el resultado del sorteo
+        mostrarResultado([`🎁 El amigo secreto es: ${elegido}`]);
     }
