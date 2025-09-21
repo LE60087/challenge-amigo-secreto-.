@@ -33,6 +33,13 @@ function agregarAmigo() {
 
 function actualizarLista() {
     const lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+    amigos.forEach((amigo) => {
+        const li = document.createElement("li");
+        li.textContent = amigo;
+        lista.appendChild(li);
+    })
+}
 function mostrarResultado(asignaciones) {
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = "";
@@ -41,6 +48,7 @@ function mostrarResultado(asignaciones) {
     const errorDiv = document.getElementById("errorMensaje");
     if (errorDiv) {
         errorDiv.textContent = "";
+        errorDiv.style.display = "none";
     }
 
     asignaciones.forEach((texto) => {
@@ -49,19 +57,6 @@ function mostrarResultado(asignaciones) {
         resultado.appendChild(li);
     });
 }
-    const resultado = document.getElementById("resultado");
-    resultado.innerHTML = "";
-
-    asignaciones.forEach((texto) => {
-        const errorDiv = document.getElementById("errorMensaje");
-        if (errorDiv) {
-            errorDiv.textContent = "La lista está vacía. Agrega al menos un amigo.";
-        }
-        return;
-        resultado.appendChild(li);
-    });
-}
-
 // 🔽 NUEVA FUNCIÓN: sortear un solo amigo secreto
 function sortearUnAmigo() {
     const errorDiv = document.getElementById("errorMensaje");
@@ -72,14 +67,11 @@ function sortearUnAmigo() {
         }
         return;
     }
-
-    if (errorDiv) {
+        if (errorDiv) {
         errorDiv.textContent = "";
         errorDiv.style.display = "none";
     }
-
-    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+        const indiceAleatorio = Math.floor(Math.random() * amigos.length);
     const elegido = amigos[indiceAleatorio];
-
     mostrarResultado([`🎁 El amigo secreto es: ${elegido}`]);
-}
+    }
