@@ -159,7 +159,6 @@ ul {
     border: 25px;
     box-shadow: 0 4px 8px regba(0, 0, 0, 0.3);
     cursor: pointer;
-    font-family: "Inter", sans-serif;
 }
 
 .button-draw img {
