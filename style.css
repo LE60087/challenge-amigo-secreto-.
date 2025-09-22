@@ -63,7 +63,7 @@ body {
 }
 
 .section-title {
-    font-family: "Inter", sans-serif;
+    font: "Inter", sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: var(--color-primary);
