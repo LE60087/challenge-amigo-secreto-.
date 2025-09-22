@@ -149,11 +149,17 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
+    justify-content: center;;
     width: 250px;
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    border: 2px solid #000;
+    border: 25px;
+    box-shadow: 0 4px 8px regba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
 }
 
 .button-draw img {
